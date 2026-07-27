@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ms">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Portal Semakan DELIMa</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<div class="container">
+
+    <div class="card">
+
+        <h1>PORTAL SEMAKAN DELIMa</h1>
+
+        <p class="subtitle">
+            SMK Sungai Acheh
+        </p>
+
+        <label>Nama Murid</label>
+
+        <input
+            type="text"
+            id="nama"
+            placeholder="Contoh: ALI BIN ABU"
+        >
+
+        <label>4 Digit Akhir Kad Pengenalan</label>
+
+        <input
+            type="text"
+            id="ic4"
+            maxlength="4"
+            placeholder="1234"
+        >
+
+        <button id="btnSemak">
+            SEMAK
+        </button>
+
+        <div id="loading">
+
+            Sedang menyemak...
+
+        </div>
+
+        <div id="result">
+
+            <div class="row">
+
+                <span>Nama</span>
+
+                <strong id="rNama"></strong>
+
+            </div>
+
+            <div class="row">
+
+                <span>Kelas</span>
+
+                <strong id="rKelas"></strong>
+
+            </div>
+
+            <div class="row">
+
+                <span>ID DELIMa</span>
+
+                <strong id="rID"></strong>
+
+            </div>
+
+            <div class="row">
+
+                <span>Kata Laluan</span>
+
+                <strong id="rPassword"></strong>
+
+            </div>
+
+        </div>
+
+        <div id="error"></div>
+
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
